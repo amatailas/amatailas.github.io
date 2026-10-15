@@ -16,8 +16,10 @@ mermaid: true
 typora-root-url: ../../amatailas.github.io
 ---
 
----
 
-# We don't have much time，let's go
 
-![fsdfsdf](./../pic_path/fsdfsdf.jfif)
+## We don't have much time, let's go
+
+
+
+![fsdfsdf](/../pic_path/fsdfsdf-1792063429575-2.jfif)
