@@ -20,4 +20,4 @@ typora-root-url: ../../amatailas.github.io
 
 ## We don't have much time, let's go
 
-![fsdfsdf](/_posts/2026-10-15-first-post.assets/fsdfsdf.jfif)
+![fsdfsdf](/assets/fsdfsdf.jfif)
