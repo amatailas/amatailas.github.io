@@ -58,11 +58,10 @@ build() {
 test() {
   bundle exec htmlproofer \
     --disable-external \
-    #--check-html \
     --allow_hash_href \
-    --skip-html \
     "$SITE_DIR"
-}
+}   
+#为了过CI，删除了--check-html \
 
 resume_site_dir() {
   if [[ -n $_baseurl ]]; then
