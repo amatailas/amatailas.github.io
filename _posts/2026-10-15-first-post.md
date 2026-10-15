@@ -16,7 +16,7 @@ mermaid: true
 typora-root-url: ../../amatailas.github.io
 ---
 
----
+
 
 ## We don't have much time, let's go
 
