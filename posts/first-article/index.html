@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="zh-CN" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover" ><meta name="generator" content="Jekyll v4.4.1" /><meta property="og:title" content="第一篇博客" /><meta name="author" content="佚名" /><meta property="og:locale" content="zh_CN" /><meta name="description" content="万事开头难" /><meta name="twitter:description" property="og:description" content="万事开头难" /><link rel="canonical" href="/posts/first-article/" /><meta property="og:url" content="/posts/first-article/" /><meta property="og:site_name" content="飞" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2026-10-20T15:20:00+00:00" /><meta property="article:modified_time" content="2026-10-20T15:20:00+00:00" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="第一篇博客" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"佚名"},"dateModified":"2026-10-20T15:20:00+00:00","datePublished":"2026-10-20T15:20:00+00:00","description":"万事开头难","headline":"第一篇博客","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/first-article/"},"url":"/posts/first-article/"}</script><title>第一篇博客 | 飞</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="飞"><meta name="application-name" content="飞"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener('change', () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.notify(); } /* flipMode() */ } /* ModeToggle */ const modeToggle = new ModeToggle(); </script><body data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/config/avatar.jpg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title"> <a href="/">飞</a></div><div class="site-subtitle font-italic">欢迎光临我的博客～</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>首页</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>分类</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>标签</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>归档</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>关于</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/amatailas" aria-label="github" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> </a> <a href="javascript:location.href = 'mailto:' + ['',''].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> 首页 </a> </span> <span>第一篇博客</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> 文章</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="搜索..."> </span> <span id="search-cancel" >取消</span></div></div><div id="main-wrapper" class="d-flex justify-content-center"><div id="main" class="container pl-xl-4 pr-xl-4"><h1 class="post-title">第一篇博客</h1><h2 id="万事开头难">万事开头难</h2><p>想以毛主席的名言：雄关漫道真如铁，而今迈步从头越，作为开头，今天在这里写下第一篇学习笔记，一步步看看未来的自己能走多远；</p><p>直入正题，无意间发现一个不错的网站，可以学习CTF：</p><p><img src="/assets/image-20261019233626629.png" alt="image-20261019233626629" /></p><p>第一次注册的话是会对新手进行引导，让你知道大概怎么进去并上手，过了引导后，会有一道热身题，也是练习中心的第一题：</p><p><img src="/assets/image-20261019233837265.png" alt="image-20261019233837265" /></p><p>做题方式为靶场形式，点击<strong>启动靶机</strong>后便可以开始练习，CTF我没做过，完全小白，所以真实记录一下心路历程：</p><hr /><p>点击生成的靶场链接后，如下图：</p><p><img src="/assets/image-20261020134451844.png" alt="image-20261020134451844" /></p><p>嘶？</p><p>我第一反应是这个图是不是有东西，然后自以为是的保存下载，看几分钟，好像也没什么，又回到这个奸笑页面发呆；</p><p>因为我之前web类的项目做的不多，但此时一顿乱点后发现没什么反应，也知道看看源码里有没有信息，于是鼠标右键查看源码（ctrl+u)：</p><p><img src="/assets/image-20261020134511893.png" alt="image-20261020134511893" /></p><p>可以看到图里有很多url，我挨个点了下，大量的代码，考虑到是热身题，我天真的想是不是直接搜就会有flag，然而并没有；</p><p>哦shit，我瞎了，居然没看到第10行有一条注释：<img src="/assets/image-20261019234613897.png" alt="image-20261019234613897" /></p><p>这包是出题人送的提示，解谜的条件估计就在<code class="language-plaintext highlighter-rouge">source.php</code>里，</p><p>这里说下，一般一个网站是一个项目，会有多个页面，比如注册、登录、注销之类的，他们是一个根目录下的，</p><p>也就是说如果主站点是www.abc.com，那么这三个功能会是</p><p>www.abc.com/注册</p><p>www.abc.com/登录</p><p>www.abc.com/注销</p><p>所以回到这个表情， 尝试把<code class="language-plaintext highlighter-rouge">source.php</code>加在后面看看效果：</p><p><img src="/assets/image-20261020134558430.png" alt="image-20261020134558430" /></p><p>确实有内容：</p><p><img src="/assets/image-20261020134620674.png" alt="image-20261020134620674" /></p><p>那基本可以确定，这个代码就是解题关键了，我们来看下：</p><p><img src="/assets/image-20261020000012500.png" alt="image-20261020000012500" /></p><p>观察这段代码，开头是类和函数的定义，那么下方基本是调用或主程序</p><p>我们先看下主程序，从第40行开始</p><p>代码大致内容是：</p><p>在<code class="language-plaintext highlighter-rouge">file</code>不为空，<code class="language-plaintext highlighter-rouge">is_string</code>、<code class="language-plaintext highlighter-rouge">checkFile</code>返回值均为True后，</p><p>将在44行做一个<code class="language-plaintext highlighter-rouge">include $_REQUEST['file']</code>的操作、并退出，</p><p>否则将显示那个奸笑的表情；</p><p>那这里基本能确定大概情况，就是要对一个请求做判断，并处理、操作什么，</p><p>因为我确实不懂php，但直接看答案是学不到东西的，所以这里我觉得去查下这些系统函数、语法、理解校验函数及调用部分的含义，再去思考，才算能学到东西，实在卡的不行再看答案；</p><p>我们一行行捋一下吧，先查一下44行的：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="k">include</span> <span class="nv">$_REQUEST</span><span class="p">(</span><span class="s1">'file'</span><span class="p">)</span>
+</pre></div></div><p><code class="language-plaintext highlighter-rouge">include</code>：尝试加载指定文件，并执行其中的 PHP 代码（如果文件中有 PHP 代码）</p><p><code class="language-plaintext highlighter-rouge">$_REQUEST</code> ：通常用于读取请求中的参数</p><p>也就是说这里会打开请求中携带的file参数，那这么看的话我们的编辑范围就转移到了url这里：</p><p><img src="/assets/image-20261020144000215.png" alt="image-20261020144000215" /></p><p>回到<code class="language-plaintext highlighter-rouge">checkFile</code>函数看下是怎么校验的：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">checkFile</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$page</span><span class="p">)</span>
+        <span class="p">{</span>
+			<span class="nv">$whitelist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"source"</span><span class="o">=&gt;</span><span class="s2">"source.php"</span><span class="p">,</span><span class="s2">"hint"</span><span class="o">=&gt;</span><span class="s2">"hint.php"</span><span class="p">];</span>
+<span class="c1">#							 键	  ,	   值		  键	  ,	  值</span>
+</pre></div></div><p>这里是创建了一个白名单，=&gt;是映射关系，代表碰到<code class="language-plaintext highlighter-rouge">source</code>就映射为<code class="language-plaintext highlighter-rouge">source.php</code>，<code class="language-plaintext highlighter-rouge">hint</code>同理；</p><p>其中<code class="language-plaintext highlighter-rouge">source</code>是键、<code class="language-plaintext highlighter-rouge">source.php</code>是值，互为键值对，类似python里的字典；</p><hr /><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div><p><code class="language-plaintext highlighter-rouge">in_array()</code> 是 PHP 中用于‌检查某个<strong>值</strong>是否存在于数组中‌的内置函数，注意是检查：<strong>值</strong></p><p>这里我理解了好久才明白，需要特地说明下：</p><p>正常php里 <code class="language-plaintext highlighter-rouge">in_array</code>是这样：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="nv">$fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">];</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="s2">"banana"</span><span class="p">,</span> <span class="nv">$fruits</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"香蕉在水果列表里"</span><span class="p">;</span> <span class="c1">// 输出结果</span>
+</pre></div></div><p>也就是检查元素是否位于该数组，</p><p>但这里<code class="language-plaintext highlighter-rouge">$whitelist</code>的元素互为键值对:</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="nv">$whitelist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"source"</span><span class="o">=&gt;</span><span class="s2">"source.php"</span><span class="p">,</span><span class="s2">"hint"</span><span class="o">=&gt;</span><span class="s2">"hint.php"</span><span class="p">];</span>
+<span class="c1">#				 键	  ,	   值		  键	  ,	  值</span>
+</pre></div></div><p>也就是说使用in_array($page, $whitelist)时，判断的对象是值：<code class="language-plaintext highlighter-rouge">source.php</code>和<code class="language-plaintext highlighter-rouge">hint.php</code></p><p>说明开发原本希望用户在url后跟<code class="language-plaintext highlighter-rouge">source</code>和<code class="language-plaintext highlighter-rouge">hint</code>，</p><p>然后这去映射成<code class="language-plaintext highlighter-rouge">source.php</code>和<code class="language-plaintext highlighter-rouge">hint.php</code>，</p><p>但<code class="language-plaintext highlighter-rouge">in_array</code>判断的是值，所以现在能直接访问php文件，这也是为什么我们先前能跟/source.php就访问成功：</p><p><img src="/assets/image-20261020154524856.png" alt="image-20261020154524856" /></p><p><img src="/assets/image-20261020154505754.png" alt="image-20261020154505754" /></p><hr /><p>我们访问<code class="language-plaintext highlighter-rouge">source.php</code>看到了源码，显然<code class="language-plaintext highlighter-rouge">hint.php</code>也是可以访问的，试试看：</p><p><img src="/assets/image-20261020154618489.png" alt="image-20261020154618489" /></p><p>啊~是关中..所以最终的flag名是ffffllllaaaagggg?</p><hr /><p>接着看源码：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="nv">$_page</span> <span class="o">=</span> <span class="nb">mb_substr</span><span class="p">(</span>
+	<span class="nv">$page</span><span class="p">,</span>
+	<span class="mi">0</span><span class="p">,</span>
+	<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+<span class="p">);</span>
+</pre></div></div><p><code class="language-plaintext highlighter-rouge">mb_substr</code> 用于截取字符串，即：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="nb">mb_substr</span><span class="p">(</span><span class="n">原字符串</span><span class="p">,</span> <span class="n">起始位置</span><span class="p">,</span> <span class="n">要截取的长度</span><span class="p">)</span>
+</pre></div></div><p><code class="language-plaintext highlighter-rouge">mb_strpos</code> 的作用是：查找某个字符串中，指定字符第一次出现的位置</p><p>所以<code class="language-plaintext highlighter-rouge">mb_strpos</code>的结果是要截取的长度</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+</pre></div></div><p>这里看到参数1是<code class="language-plaintext highlighter-rouge">$page . '?'</code>，我们用在线工具试一下<code class="language-plaintext highlighter-rouge">$page.'?'</code>的效果：</p><p><img src="/assets/image-20261020175044247.png" alt="image-20261020175044247" /></p><p>所以其实就是拼接到一起了；</p><hr /><p>那么我们举个例子代入下：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+
+<span class="c1"># 假如</span>
+<span class="nv">$page</span> <span class="o">=</span> <span class="s1">'source.php'</span>
+<span class="nv">$page</span><span class="mf">.</span><span class="s1">'?'</span> <span class="o">=</span> <span class="s1">'source.php?'</span>
+
+<span class="c1"># 那么</span>
+<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">10</span>
+
+<span class="c1"># 即问号在第10位，所以函数返回10</span>
+<span class="o">=&gt;</span> <span class="s1">'source.php?'</span>
+    <span class="mo">01234567</span><span class="mi">8910</span>
+</pre></div></div><p>ok，那么开发的意图是，比如请求里是<code class="language-plaintext highlighter-rouge">source.php</code>，就拼接<code class="language-plaintext highlighter-rouge">?</code>，并返回<code class="language-plaintext highlighter-rouge">?</code>的位置，是一个数字，然后把这个数字当做mb_substr要截取的长度，所以基本就2种情况：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="nv">$page</span> <span class="o">=</span> <span class="s1">'source.php'</span>
+<span class="nv">$page</span> <span class="o">=</span> <span class="s1">'hint.php'</span>
+
+<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+    
+<span class="o">=&gt;</span> <span class="s1">'source.php?'</span>
+    <span class="mo">01234567</span><span class="mi">8910</span>
+    
+<span class="o">=&gt;</span> <span class="s1">'hint.php?'</span>
+    <span class="mo">01234567</span><span class="mi">8</span>
+</pre></div></div><p>但是but：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="nv">$_page</span> <span class="o">=</span> <span class="nb">mb_substr</span><span class="p">(</span>
+	<span class="nv">$page</span><span class="p">,</span>
+	<span class="mi">0</span><span class="p">,</span>
+	<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+<span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>		 <span class="c1"># &lt;——————看这里</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div><p>当我自以为是的研究明白<code class="language-plaintext highlighter-rouge">mb_strpos</code>和<code class="language-plaintext highlighter-rouge">mb_substr</code>后，发现下面冷冰冰的跟了个：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>	<span class="c1"># $_page是截取的片段</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div><p>当你以为它拼完又截取是要做什么复杂操作的时候，这里来了个判断：</p><p>截取到的片段、是否在白名单中……</p><p>也就是说不管怎么截都是<code class="language-plaintext highlighter-rouge">source.php</code>或者<code class="language-plaintext highlighter-rouge">hint.php</code>….</p><p>shit, man，以防再做无用功我们总览剩余代码再看看：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre><td class="rouge-code"><pre><span class="nv">$_page</span> <span class="o">=</span> <span class="nb">mb_substr</span><span class="p">(</span>
+	<span class="nv">$page</span><span class="p">,</span>
+	<span class="mi">0</span><span class="p">,</span>
+	<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+<span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">$_page</span> <span class="o">=</span> <span class="nb">urldecode</span><span class="p">(</span><span class="nv">$page</span><span class="p">);</span>
+	<span class="nv">$_page</span> <span class="o">=</span> <span class="nb">mb_substr</span><span class="p">(</span>
+	<span class="nv">$_page</span><span class="p">,</span>
+	<span class="mi">0</span><span class="p">,</span>
+	<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$_page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+<span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">echo</span> <span class="s2">"you can't see it"</span><span class="p">;</span>
+<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</pre></div></div><p>这个时候注意了，第6行就是刚刚让我们绝望的地方，</p><p>但是第七行就return了，这意味着截取部分如果是<code class="language-plaintext highlighter-rouge">source.php</code>或<code class="language-plaintext highlighter-rouge">hint.php</code>，就校验通过，也就退出<code class="language-plaintext highlighter-rouge">checkFile</code>函数，那没截取的部分呢？</p><p>比如：</p><p>$page = ‘/source.php123456789’ $page.?= source.php? _$page = source.php</p><p><code class="language-plaintext highlighter-rouge">/ 123456789</code>却并没有被处理，直接放掉了</p><p>那这里就很明显了，可以拼接跨目录去访问flag</p><p>再看下后面的部分，就是url解码后做相同的操作，如果这2个校验都没过，网页会提示you can’t see it来嘲讽一下；</p><p>那还说毛呢，来吧，我们最后再看一眼主程序：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'file'</span><span class="p">])</span>
+        <span class="o">&amp;&amp;</span> <span class="nb">is_string</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'file'</span><span class="p">])</span>
+        <span class="o">&amp;&amp;</span> <span class="n">emmm</span><span class="o">::</span><span class="nf">checkFile</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'file'</span><span class="p">])</span>
+    <span class="p">)</span> <span class="p">{</span>
+        <span class="k">include</span> <span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'file'</span><span class="p">];</span>
+        <span class="k">exit</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;br&gt;&lt;img src=</span><span class="se">\"</span><span class="s2">https://i.loli.net/2018/11/01/5bdb0d93dc794.jpg</span><span class="se">\"</span><span class="s2"> /&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>  
+</pre></div></div><p>也就是说最关键的第3行、<code class="language-plaintext highlighter-rouge">checkFile</code>函数校验通过后，服务器将打开file文件，</p><p>这里我大概只要url要拼接file，但是不清楚细节，所以去查着学习下吧</p><p>URI 规范 <strong>RFC 3986</strong> 里定义：</p><pre><code class="language-url">scheme://host[:port][/path][?query][#fragment]
+# 方括号代表可选
+</code></pre><blockquote><p>host：xxx.com</p><p>/path：站点路径，/代表根路径，后面可以接到任意子目录</p><p>？query：？为分隔符，query是参数，后端代码定义具体情况，通常访问的话是结合=，比如这里就是file=</p></blockquote><p>含义就是访问这个主机的资源</p><p>因为源码里约定了<code class="language-plaintext highlighter-rouge">include $REQUEST['file']</code>，所以结合上面查到的知识，我们的payload如下：</p><p><img src="/assets/image-20261020214509247.png" alt="image-20261020214509247" /></p><p>还记得前面<code class="language-plaintext highlighter-rouge">hint.php</code>有提示：</p><p><img src="/assets/image-20261020154618489.png" alt="image-20261020154618489" /></p><p>ok那分别试试这两个名字，为了防止子目录太深，我们多跨几层：</p><p><img src="/assets/image-20261020215139001.png" alt="image-20261020215139001" /></p><p><img src="/assets/image-20261020215117022.png" alt="image-20261020215117022" /></p><p>what？怎么都不行呢？</p><p>到这一步，我卡了很久，然后脑子也思考木了，于是我去看了下答案的payload：</p><pre><code class="language-url">?file=source.php?../../../../../ffffllllaaaagggg
+</code></pre><p>观察发现，区别在于source.php后多了个<code class="language-plaintext highlighter-rouge">?</code></p><p>思考了很久还是没想明白，于是我决定回到代码，想明白是为什么</p><hr /><p><img src="/assets/image-20261020220557532.png" alt="image-20261020220557532" /></p><p><img src="/assets/image-20261020220357927.png" alt="image-20261020220357927" /></p><p>如上图，根据结果：“you can’t see it”可知，这是校验函数<code class="language-plaintext highlighter-rouge">checkFile</code>最后2行，代码走到这里说明前面的校验没通过，由于没通过，40行的三重肯定就走不到，所以跳转至46行else，输出图片奸笑；</p><p>因此我需要去看下具体是怎么没通过校验，也就是这里：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="nv">$_page</span> <span class="o">=</span> <span class="nb">mb_substr</span><span class="p">(</span>
+	<span class="nv">$page</span><span class="p">,</span>
+	<span class="mi">0</span><span class="p">,</span>
+	<span class="nb">mb_strpos</span><span class="p">(</span><span class="nv">$page</span> <span class="mf">.</span> <span class="s1">'?'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span>
+<span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$_page</span><span class="p">,</span> <span class="nv">$whitelist</span><span class="p">))</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div><blockquote><p>ps：由于在线php网页基本没部署mbstring扩展，这里截取字符对象都是英文，所以我们用原生函数替代，不影响结果</p></blockquote><p>由于请求url中，实际后端处理部分是<code class="language-plaintext highlighter-rouge">?file=</code>后的内容，因此模拟时就输入=后的内容，</p><p>我盯着这里对比了好久<code class="language-plaintext highlighter-rouge">mb_substr</code>中的逻辑才反应过来，并建立了联系，</p><p>问题payload：</p><pre><code class="language-url">$page = source.php../../../../../flag
+</code></pre><p>我们放入<code class="language-plaintext highlighter-rouge">mb_strpos</code>走一下，</p><p>此时<code class="language-plaintext highlighter-rouge">mb_strpos($page . '?', '?')</code>加工后，<code class="language-plaintext highlighter-rouge">$page . '?'</code>是：</p><div class="language-php highlighter-rouge"><div class="highlight">class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="nv">$_page</span> <span class="o">=</span> <span class="n">source</span><span class="mf">.</span><span class="n">php</span><span class="mf">..</span><span class="o">/../../../../</span><span class="n">flag</span><span class="o">?</span>
+         <span class="mf">0123456789...................29</span>
+</pre></div></div><p>可以看到<code class="language-plaintext highlighter-rouge">?</code>是拼在末尾的，位置就变成了29，</p><p>所以再走到<code class="language-plaintext highlighter-rouge">mb_substr</code>后，便截取0~第一个问号?间的字段，而此时问号在末尾，所以截的是payload本身</p><p><img src="/assets/image-20261020222256551.png" alt="image-20261020222256551" /></p><p>显然它并不等于<code class="language-plaintext highlighter-rouge">source.php</code>，所以过不了<code class="language-plaintext highlighter-rouge">in_array</code>的校验</p><p>正确payload：</p><pre><code class="language-url">$page = source.php?../../../../../flag
+</code></pre><p>此时<code class="language-plaintext highlighter-rouge">mb_strpos($page . '?', '?')</code>加工后，<code class="language-plaintext highlighter-rouge">$page . '?'</code>是：</p><pre><code class="language-url">$_page = source.php?../../../../../flag?
+</code></pre><p>可以看到，<code class="language-plaintext highlighter-rouge">$page . '?'</code>是固定在末尾拼接?，问号还是拼在了flag后，但<code class="language-plaintext highlighter-rouge">mb_substr</code>是取第一个问号前的字段，</p><p>正是因为主动构造了<code class="language-plaintext highlighter-rouge">source.php?</code>，所以截取之后是<code class="language-plaintext highlighter-rouge">source.php</code></p><p><img src="/assets/image-20261020222742772.png" alt="image-20261020222742772" /></p><p>行了，总算是弄明白了，虽然这道题不难，但是对于初学者而言细节挺多的，现在算彻底吃透这道题了，来看看flag吧：</p><p><img src="/assets/image-20261020230418386.png" alt="image-20261020230418386" /></p><p>累屎我了，下篇见叭</p></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">热门标签</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/%E7%94%9F%E6%B4%BB/">生活</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><footer><div class="container pl-lg-4 pr-lg-4"><div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3"><div class="footer-left"><p class="mb-0"> © 2026 <a href="https://github.com/username">amatailas</a>. <span data-toggle="tooltip" data-placement="top" title="除非另有说明，本网站上的博客文章均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。">保留部分权利。</span></p></div><div class="footer-right"><p class="mb-0">本站由 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 生成，采用 <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> 主题。</p></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js"></script> <script> (function () { function updateMermaid(event) { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { const mode = event.data.message; if (typeof mermaid === "undefined") { return; } let expectedTheme = (mode === ModeToggle.DARK_MODE ? "dark" : "default"); let config = {theme: expectedTheme}; /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function () { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } let initTheme = "default"; if ($("html[data-mode=dark]").length > 0 || ($("html[data-mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches)) { initTheme = "dark"; } let mermaidConf = { theme: initTheme /* <default|dark|forest|neutral> */ }; /* Create mermaid tag */ $("pre").has("code.language-mermaid").each(function () { let svgCode = $(this).children().html(); $(this).addClass("unloaded"); $(this).after(`<pre class=\"mermaid\">${svgCode}</pre>`); }); mermaid.initialize(mermaidConf); window.addEventListener("message", updateMermaid); })(); </script><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">搜索结果为空</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/zh.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/unregister.js"></script>
